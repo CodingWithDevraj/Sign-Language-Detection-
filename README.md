@@ -41,7 +41,7 @@ SignLanguageRecognition/
    git clone https://github.com/yourusername/SignLanguageRecognition.git
    cd SignLanguageRecognition
 
-Install dependencies:
+##Install dependencies:
 
 bash
 Copy
@@ -49,14 +49,14 @@ Edit
 pip install -r requirements.txt
 
 
-Usage Guide
+##Usage Guide
 🔹 Step 1: Data Collection please download the Sign from any Open Source Image of A B C Of Hand Gesture
 bash
 Copy
 Edit
 python collectdata.py
 
-Step 2: Convert Images to Numpy Arrays
+##Step 2: Convert Images to Numpy Arrays
 bash
 Copy
 Edit
@@ -83,7 +83,7 @@ Edit
 python app.py
 
 
-Model Architecture
+##Model Architecture
 text
 Copy
 Edit
@@ -93,7 +93,7 @@ Input: 30 frames x 63 keypoints (21 hand landmarks × 3 [x, y, z])
 → Output: Softmax over actions (A, B, C)
 
 
- Example Output
+ ##Example Output
 Model prints real-time prediction like:
 
 css
@@ -124,7 +124,7 @@ Copy
 Edit
 pip install -r requirements.txt
 
-Customization
+##Customization
 Add more actions by updating:
 
 python
