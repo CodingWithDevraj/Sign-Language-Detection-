@@ -82,3 +82,53 @@ Copy
 Edit
 python app.py
 
+
+Model Architecture
+text
+Copy
+Edit
+Input: 30 frames x 63 keypoints (21 hand landmarks × 3 [x, y, z])
+→ LSTM (64) → LSTM (128) → LSTM (64)
+→ Dense (64) → Dense (32)
+→ Output: Softmax over actions (A, B, C)
+
+
+ Example Output
+Model prints real-time prediction like:
+
+css
+Copy
+Edit
+A
+B
+C
+
+Requirements
+Example requirements.txt:
+
+txt
+Copy
+Edit
+opencv-python
+mediapipe
+numpy
+pandas
+keras
+tensorflow
+scikit-learn
+
+Install them via:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+
+Customization
+Add more actions by updating:
+
+python
+Copy
+Edit
+actions = np.array(['A', 'B', 'C', 'Hello', 'Yes', 'No'])
+
